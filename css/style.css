@@ -26,6 +26,13 @@ footer {
   padding: 1em 0 .3em 0;
   color: #D0D0D0;
 }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: .5em;
+}
 /*-- Main Menu Styles--*/
 nav ul {
   list-style: none;
@@ -96,4 +103,13 @@ a.button:hover, a.button:active {
 @media screen and (max-width: 768px) {
   header {width: 96%;}
   article {width: 96%;}
+}
+
+
+.dropcap {
+  float: left; 
+  line-height: 85%;
+  width: .7em;
+  font-size: 400%; 
+  font-family: serif;
 }
