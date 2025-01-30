@@ -11,49 +11,57 @@ img {
 	height: auto;
 }
 body {
-  color: #444;
+  color: #031926;
   font-size: 1.6rem;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Gentium Book Plus', serif;
+  background-color: #F4E8CD;
+ 
 }
 p {
   margin-bottom: .67em;
 }
 nav, footer {
-  background-color: #444;
+  background-color: #031926;
 }
 footer {
   text-align: center;
-  padding: 1em 0 .3em 0;
-  color: #D0D0D0;
+  padding: .1em 0 .3em 0;
+  color: #F4E8CD;
+  margin: auto; 
 }
 
-nav {
+
+/*-- Main Menu Styles--*/
+
+nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-bottom: .5em;
-}
-/*-- Main Menu Styles--*/
-nav ul {
   list-style: none;
   padding: 1em;
+  margin-top: 0em;
 }
 nav a:link, nav a:visited {
-  color: #D0D0D0;
+  color: #F4E8CD;
   text-decoration: none;
 }
 nav a:hover, nav a:active  {
-  color: #F0F0F0;
+  color: #F4E8CD;
   text-decoration: underline;
 }
 nav a.active {
-  color: #F0F0F0;
+  color: #F4E8CD;
 }
+
 /*-- Hero Unit Styles--*/
 header {
   width: 510px;
   margin-top: 2em;
   margin-bottom: 2em;
+  margin: auto; 
+  text-align: center; 
+  color: #3E655E;
 }
 header img {
   width: 100%;
@@ -62,42 +70,63 @@ header img {
 header h1 {
   margin: 0 auto;
   padding: 0 auto;
+  align-items: center;
+
 }
 .small {
   margin-top: 1em;
+  font-weight: 900; 
+  font-family: 'Lato', sans-serif; 
+  text-transform: uppercase; 
+  font-size: medium;
+  color: #67A297;
 }
 /*-- Article Styles--*/
 article {
   width: 768px;
   font-size: 18px;
   line-height: 1.3;
+  margin: auto; 
 }
 article figure {
   width: 39%;
   margin: 0 0 1.25em 1.25em;
+  float: right;
 }
 article figcaption {
-  font-size: inherit;
+  font-size: 13px;
+  font-weight: .5;
+  font-family:'Courier New', Courier, monospace;
+  color: #031926;
 }
 .pagination {
   margin-top: 2em;
   margin-bottom: 2em;
   width: 96%;
+  justify-content: center;
+  display: flex; 
+
+  
 }
+
 a.button {
-  border: 2px solid #888;
-  padding: .4em 1em .4em 1em;
+  border: 2px solid #9DBEBB;
+  padding: .5em 1em .5em 1em;
   text-decoration: none;
-  color: #888;
+  color: #031926;
   border-radius: 200px;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 80%;
+  margin: auto;
+  background-color: #9DBEBB;
 }
+
 a.button:hover, a.button:active {
-  border: 1px solid #444;
+  border: 2px solid #468189;
   text-decoration: none;
-  color: #222;
+  color: #031926;
+  background-color: #468189;
 }
 /*-- changes header and article width on small screens --*/
 @media screen and (max-width: 768px) {
@@ -108,8 +137,9 @@ a.button:hover, a.button:active {
 
 .dropcap {
   float: left; 
-  line-height: 85%;
+  line-height: 100%;
   width: .7em;
   font-size: 400%; 
   font-family: serif;
+  color:#031926; 
 }
